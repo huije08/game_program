@@ -355,6 +355,8 @@
 "Assets/Class2th (Script)/Scripts/Stats.cs"
 "Assets/Class3th (Life Cycle)/Scripts/State.cs"
 "Assets/Class4th (Component)/Scripts/Truck.cs"
+"Assets/Class5th (User Interface)/Scripts/MianMenu.cs"
+"Assets/Class5th (User Interface)/Skyden_Games/Free_Casual_GUI/Demo/Scripts/SearchUrl.cs"
 -langversion:9.0
 /deterministic
 /optimize+
