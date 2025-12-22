@@ -116,6 +116,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
@@ -357,6 +358,7 @@
 "Assets/Class4th (Component)/Scripts/Truck.cs"
 "Assets/Class5th (User Interface)/Scripts/MianMenu.cs"
 "Assets/Class5th (User Interface)/Skyden_Games/Free_Casual_GUI/Demo/Scripts/SearchUrl.cs"
+"Assets/Class9th (Input System)/Scripts/Character.cs"
 -langversion:9.0
 /deterministic
 /optimize+
