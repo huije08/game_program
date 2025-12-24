@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Class9th (Input System)/Scenes/Class9th.unity
+- path: Assets/Class 10th(Physhics)/Scenes/Class10th.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
