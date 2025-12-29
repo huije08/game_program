@@ -6,7 +6,7 @@ public class Tribune : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        \
+        
     }
     private void OnCollisionStay(Collision collision)
     {
