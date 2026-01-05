@@ -1,23 +1,48 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    [SerializeField] AudioClip audioClip;
-    [SerializeField] AudioSource audioSource;
-    // Start is called before the first frame update
-    private void Emit()
+    public enum AnimationState
     {
-        audioSource.clip = Resources.Load<AudioClip>("Attack");
-        audioSource.Play();
-
-
+        Idle,
+        Walk,
+        Attack,
+        Die
     }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] Animator animator; 
+    [SerializeField] int index = 0;
+    [SerializeField] AnimationState state;
+    
+    private void Awake()
     {
-        
+        animator = GetComponent<Animator>();
+    }
+
+    public void Transition(int count)
+    {
+        if (count == 0)
+        {
+            state = (AnimationState)((int)state %3);
+            return;
+        }
+        index += count;
+        if (index % 3 == 0)
+        {
+            state++;
+        }
+    }
+   
+
+    public void Emit()
+    {
+        Debug.Log(state.ToString());
+        audioSource.clip = Resources.Load<AudioClip>(state.ToString());
+        audioSource.Play();
     }
 }
